@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import Hello from "component/Hello";
-import "bootstrap/dist/css/bootstrap.css";
+import "stylesheet/style.css";
 
 ReactDOM.render(<Hello />, document.getElementById("root"));

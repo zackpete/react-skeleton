@@ -4,6 +4,12 @@ const { Component } = React;
 
 export default class Hello extends Component {
   render() {
-    return <h1>Hello world!</h1>;
+    return (
+      <div className="text-center">
+        <header className="bg-black m-6 p-6 rounded shadow-lg">
+          <h1 className="text-white text-3xl">React Skeleton</h1>
+        </header>
+      </div>
+    );
   }
 }
