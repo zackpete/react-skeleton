@@ -5,11 +5,14 @@ const { Component } = React;
 export default class Hello extends Component {
   render() {
     return (
-      <div className="text-center">
-        <header className="bg-black m-6 p-6 rounded shadow-lg">
-          <h1 className="text-white text-3xl">React Skeleton</h1>
-        </header>
-      </div>
+      <section className="section">
+        <div className="container">
+          <h1 className="title">Hello World</h1>
+          <p className="subtitle">
+            My first website with <strong>Bulma</strong>!
+          </p>
+        </div>
+      </section>
     );
   }
 }
