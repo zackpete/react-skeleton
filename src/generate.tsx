@@ -1,5 +1,5 @@
 import * as React from "react";
-import Hello from "component/Hello";
+import Page from "component/Hello";
 import { renderToString } from "react-dom/server";
 
-console.log(renderToString(<Hello />));
+console.log(renderToString(<Page />));

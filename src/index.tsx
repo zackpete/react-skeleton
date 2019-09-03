@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Hello from "component/Hello";
 import "css/style.css";
+import Dynamic from "./entrypoint/Dynamic";
 
-ReactDOM.render(<Hello />, document.getElementById("root"));
+ReactDOM.render(<Dynamic />, document.getElementById("root"));

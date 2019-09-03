@@ -8,7 +8,7 @@
     "build": "npm run _css && npm run _dist",
     "format": "npm run _prettier -- --write",
     "generate": "npm run _css && npm run format",
-    "serve": "npx webpack-dev-server --port 8000 --mode development",
+    "edit": "npx webpack-dev-server --port 8000 --mode development",
     "test": "npm run _prettier -- --check",
     "_css": "npx tailwind build src/css/style.src.css -o src/css/style.css",
     "_dist": "npx webpack --mode production --config webpack.config.static.js && node dist/bundle.js",
