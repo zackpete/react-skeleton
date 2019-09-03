@@ -11,7 +11,7 @@
     "serve": "npx webpack-dev-server --port 8000 --mode development",
     "test": "npm run _prettier -- --check",
     "_css": "npx tailwind build src/css/style.src.css -o src/css/style.css",
-    "_dist": "npx webpack --mode production",
+    "_dist": "npx webpack --mode production --config webpack.config.static.js && node dist/bundle.js",
     "_prettier": "npx prettier 'src/**/*.{css,scss,js,jsx,ts,tsx}'"
   },
   "devDependencies": {
