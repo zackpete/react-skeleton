@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
@@ -17,6 +19,13 @@ module.exports = {
       },
     ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      favicon: "src/favicon.png",
+    }),
+  ],
 
   devtool: "source-map",
   devServer: {
