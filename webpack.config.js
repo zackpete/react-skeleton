@@ -1,6 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
-
 module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
@@ -21,18 +18,11 @@ module.exports = {
     ],
   },
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "src/index.html",
-      favicon: "src/favicon.png",
-    }),
-  ],
-
   devtool: "source-map",
   devServer: {
     historyApiFallback: true,
   },
   entry: "./src/index.tsx",
   externals: { "react:": "React" },
-  output: { filename: "bundle.js", path: path.resolve("./dist") },
+  output: { filename: "bundle.js", path: require("path").resolve("./dist") },
 };
