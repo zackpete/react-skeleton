@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+process.traceDeprecation = true;
+
 module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
@@ -32,6 +34,5 @@ module.exports = {
     historyApiFallback: true,
   },
   entry: "./src/index.tsx",
-  externals: { "react:": "React" },
   output: { filename: "bundle.js", path: require("path").resolve("./dist") },
 };
