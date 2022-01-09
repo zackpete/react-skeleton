@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": ["dom", "es5", "es2015.collection"],
-    "moduleResolution": "node",
     "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "outDir": "./dist/",
+    "noEmitOnError": true,
+    "removeComments": true,
     "sourceMap": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "target": "es5"
+    "outDir": "out",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "importsNotUsedAsValues": "remove",
+    "jsx": "react",
+    "noEmit": true
   },
-  "include": ["./src/"]
+  "include": ["src/**/*"]
 }
