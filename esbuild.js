@@ -11,7 +11,7 @@ esbuildServe(
     logLevel: "info",
     entryPoints: ["src/index.tsx"],
     bundle: true,
-    outfile: "out/script.js",
+    outfile: "out/index.js",
     sourcemap: true,
     define: { "process.env.NODE_ENV": '"development"' },
     external: ["react", "react-dom"],

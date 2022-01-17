@@ -1,7 +1,8 @@
-STYLE := tailwindcss -c tailwind.cjs -i src/style.css -o out/style.css
+STYLE := tailwindcss -c tailwind.cjs -i tailwind.css -o src/style.css
 BUILD := node esbuild.js
 
 build:
+	mkdir -p out
 	npx ${STYLE}
 	npx ${BUILD}
 	cp src/index.html out/index.html
@@ -15,6 +16,6 @@ style-watch:
 	npx ${STYLE} -w
 
 clean:
-	rm -fr out
+	rm -fr out src/style.css
 
 .PHONY: build build-watch style-watch clean

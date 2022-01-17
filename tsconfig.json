@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "noEmitOnError": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "outDir": "out",
-    "rootDir": "./src",
     "baseUrl": "./src",
+    "esModuleInterop": true,
     "importsNotUsedAsValues": "remove",
     "jsx": "react",
-    "noEmit": true
+    "noEmit": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "outDir": "out",
+    "removeComments": true,
+    "rootDir": "./src",
+    "sourceMap": true
   },
   "include": ["src/**/*"]
 }
